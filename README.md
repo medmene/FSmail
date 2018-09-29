@@ -1,2 +1,2 @@
-# fsmail
+# FSmail
 fast send mails
