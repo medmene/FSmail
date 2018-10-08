@@ -13,29 +13,25 @@
 
 	<div class="w3-container w3-display-middle w3-half w3-margin-top">
 
-		<form class="w3-container w3-card-4">
+		<form id="form" action="send.php" method="post" class="w3-container w3-card-4">
 
 			<p><label>To</label>
-			<input class="w3-input w3-border w3-margin-bottom" style="width:95%" type="text">
+			<input name="to" class="w3-input w3-border w3-margin-bottom" required="required" style="width:95%" type="text">
 			</p>
-			<p><label>From</label>
-			<input class="w3-input w3-border w3-margin-bottom" style="width:95%" type="text">
-			</p>
-
 			<div class="w3-row-padding w3-margin-bottom" style="width:95%">
 				<div class="w3-half">
       				<label>Subject</label>
-					<input class="w3-input w3-border " type="text">
+					<input name="subj" class="w3-input w3-border" required="required" type="text">
 				</div>
 				<div class="w3-half">
 					<label>Key</label>
-					<input class="w3-input w3-border " type="text">
+					<input name="key" class="w3-input w3-border" required="required" type="text">
 				</div>
 			</div>
-			<textarea class="w3-input w3-border w3-margin-bottom" style="height:250px; min-height:100px; min-width: 400px;  max-height:300px; width:95%; max-width:95%" >
+			<textarea name="msg" class="w3-input w3-border w3-margin-bottom" style="height:250px; min-height:100px; min-width: 400px;  max-height:300px; width:95%; max-width:95%">
 			</textarea>
 			<p>
-			<button class="w3-button w3-section w3-teal w3-ripple"> Send </button></p>
+			<input class="w3-button w3-section w3-teal w3-ripple" type="submit" name="submit" value="Send">			
 
 		</form>
 
